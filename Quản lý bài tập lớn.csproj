@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FC143FEB-5BAB-49F4-9A5C-191A270B2CF0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Quản_lý_bài_tập_lớn</RootNamespace>
+    <AssemblyName>Quản lý bài tập lớn</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAdDN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdDN.Designer.cs">
+      <DependentUpon>FormAdDN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdHome.Designer.cs">
+      <DependentUpon>FormAdHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDetaiDL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDetaiDL.Designer.cs">
+      <DependentUpon>FormDetaiDL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDN.Designer.cs">
+      <DependentUpon>FormDN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formdoimk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formdoimk.Designer.cs">
+      <DependentUpon>Formdoimk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDSDIEM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDSDIEM.Designer.cs">
+      <DependentUpon>FormDSDIEM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDSLOP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDSLOP.Designer.cs">
+      <DependentUpon>FormDSLOP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGVHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGVHome.Designer.cs">
+      <DependentUpon>FormGVHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSVHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSVHome.Designer.cs">
+      <DependentUpon>FormSVHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTTK.Designer.cs">
+      <DependentUpon>FormTTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTTKAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTTKAD.Designer.cs">
+      <DependentUpon>FormTTKAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTTKGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTTKGV.Designer.cs">
+      <DependentUpon>FormTTKGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTTKSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTTKSV.Designer.cs">
+      <DependentUpon>FormTTKSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAdDN.resx">
+      <DependentUpon>FormAdDN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdHome.resx">
+      <DependentUpon>FormAdHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDetaiDL.resx">
+      <DependentUpon>FormDetaiDL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDN.resx">
+      <DependentUpon>FormDN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formdoimk.resx">
+      <DependentUpon>Formdoimk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDSDIEM.resx">
+      <DependentUpon>FormDSDIEM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDSLOP.resx">
+      <DependentUpon>FormDSLOP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGVHome.resx">
+      <DependentUpon>FormGVHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSVHome.resx">
+      <DependentUpon>FormSVHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTTK.resx">
+      <DependentUpon>FormTTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTTKAD.resx">
+      <DependentUpon>FormTTKAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTTKGV.resx">
+      <DependentUpon>FormTTKGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTTKSV.resx">
+      <DependentUpon>FormTTKSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
